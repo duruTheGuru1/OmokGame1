@@ -32,11 +32,14 @@ public class Game {
         return currBoard;
     }
 
+    public void setStone(int pos[],Player player){
+        this.getGameBoard().getBoard()[pos[0]][pos[1]] = player.getMark();;
+
+    }
+
     public boolean canPlace(int [] pos){
-        //board = this.board.getBoard();
         if (this.getGameBoard().getBoard()[pos[0]][pos[1]] != '.'){return false;}
         else{return true;}
-
     }
 
     public boolean winChecker (char [][] board, char mark){

@@ -18,6 +18,10 @@ public class ConsoleUI {
         System.out.println("Press 1 for Human vs. Human Game. Press 2 for Human vs. Computer mode:");
     }
 
+    public void newGame(){
+        System.out.println("new game?");
+    }
+
     public void pickSpace(int player){
         System.out.println("Player " + player + "'s turn. Pick a spot on the board please \nFrom 0 - "
                 + currGame.getGameBoard().getBoard().length + ". Your 1st input will be for the row, and the 2nd for the column.");
